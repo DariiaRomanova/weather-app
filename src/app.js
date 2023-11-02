@@ -1,3 +1,5 @@
+let apiKey = "od6b13a01c4ef9abd54c31t431434300";
+
 // Set current date and time
 function formatDate(date) {
   let weekDays = [
@@ -42,11 +44,25 @@ let date = document.querySelector("#date");
 date.innerHTML = formatDate(new Date());
 
 // Implements searching
+function displayCurrentTemperature(response) {
+  let cityNameElement = document.querySelector("#city-name");
+  let countryNameElement = document.querySelector("#country-name");
+  let currentTempElement = document.querySelector("#current-temp");
+  let city = response.data.city;
+  let country = response.data.country;
+  let currentTemperature = Math.round(response.data.temperature.current);
+  cityNameElement.innerHTML = city;
+  countryNameElement.innerHTML = country;
+  currentTempElement.innerHTML = currentTemperature;
+}
+
 function startSearch(event) {
   event.preventDefault();
   let searchInput = document.querySelector("#search-input");
-  let cityName = document.querySelector("#city-name");
-  cityName.innerHTML = searchInput.value;
+  let searchQuery = searchInput.value;
+  console.log(searchQuery);
+  let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${searchQuery}&key=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayCurrentTemperature);
 }
 let searchButton = document.querySelector("#search-button");
 searchButton.addEventListener("click", startSearch);
