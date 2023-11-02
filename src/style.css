@@ -1,0 +1,134 @@
+body {
+  line-height: 1.5em;
+  font-family: "Open Sans", sans-serif;
+  padding: 0;
+}
+h1 {
+  font-size: 2.2em;
+  text-align: center;
+  margin: 0;
+}
+h2 {
+  font-size: 2em;
+  margin: 0;
+}
+h3 {
+  font-size: 1.5em;
+  font-weight: lighter;
+}
+h5 {
+  text-align: center;
+  margin: 0;
+  font-size: 1.1em;
+}
+p {
+  font-style: italic;
+  margin: auto;
+}
+.temp-unit {
+  font-size: 16px;
+}
+.temp-unit a {
+  color: black;
+}
+.container {
+  width: 100%;
+  margin: auto;
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(163, 175, 243) 0%,
+    rgb(220, 182, 232) 100.2%
+  );
+}
+
+.card {
+  background-color: rgba(237, 240, 246, 0.4);
+  border-radius: 8px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  margin: 5px;
+  min-height: 120px;
+}
+.input-group {
+  margin: 0;
+  padding: 0;
+}
+input,
+.input-group-text {
+  opacity: 0.4;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.input-group-prepend {
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  opacity: 0.6;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+.week-forecast {
+  background: no-repeat center url("../images/mountain-background.jpg");
+  background-color: transparent;
+  border: none;
+}
+.week-forecast li {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+}
+
+.fa-searchengin {
+  margin: auto;
+  padding: 10px;
+}
+
+.current {
+  padding: 10px;
+}
+.city {
+  padding: 10px;
+}
+.current-weather-icon {
+  margin: auto;
+  width: 100px;
+}
+
+.hourly-forecast {
+  background: linear-gradient(
+    109.6deg,
+    rgb(245, 239, 249) 30.1%,
+    rgb(232, 219, 234) 100.2%
+  );
+  text-align: center;
+}
+.hourly-forecast .row {
+  margin: auto 10px;
+}
+.add-parameters {
+  background-color: #7877be;
+  border: none;
+  padding: 5px;
+  text-align: center;
+}
+
+.add-parameters img {
+  display: block;
+  margin: 5px auto;
+  padding: 0;
+}
+.add-parameters h6 {
+  font-size: 1.1em;
+  margin: 0;
+  padding: 0;
+}
+.add-parameters .col p {
+  margin-top: 10px;
+}
+.feel-like {
+  font-size: smaller;
+  margin: 0;
+}
+.list-group {
+  margin: auto 20px;
+}
+.list-group-item {
+  margin: 2px;
+  padding: 5px;
+}
